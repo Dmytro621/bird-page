@@ -267,7 +267,9 @@ main {
 }
 
 .help {
+    display: none;
     position: fixed;
+    z-index: 1;
     background-color: rgba(57, 13, 101, 0.9);
     top: 0;
     bottom: 0;
@@ -349,3 +351,17 @@ main {
 .help button:active .help-box {
     display: none;
 } */
+
+#open {
+    display: none;
+}
+
+#open:checked+div.help {
+    display: inline-block;
+}
+
+.close-support {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
